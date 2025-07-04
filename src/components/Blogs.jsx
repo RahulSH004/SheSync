@@ -369,7 +369,7 @@ export function Blogs() {
       >
         <div className="max-w-6xl mx-auto space-y-8">
           {/* Header */}
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center mt-8 pt-6 md:mt-16 md:pt-6">
             <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 dark:from-pink-400 dark:to-purple-400">
               Education Hub
             </h2>

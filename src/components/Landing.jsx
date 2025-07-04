@@ -59,7 +59,7 @@ export function Landing() {
       {width > 816 && (
         <button
           onClick={toggleSidebar}
-          className="fixed left-0 top-0 w-10 z-10 p-2 bg-pink-600 text-white rounded-r-md  transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50"
+          className="fixed left-0 top-6 w-10 z-10 p-2 bg-pink-600 text-white rounded-r-md transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50"
           style={{
             transform: sidebarVisible ? "translateX(256px)" : "translateX(0)",
           }}
@@ -76,7 +76,7 @@ export function Landing() {
 
       {/* Main Content */}
       <main
-        className={`flex-1 p-6 overflow-auto bg-white dark:bg-gray-900 transition-all duration-300 ease-in-out ${
+        className={`flex-1 p-3 md:p-6 overflow-auto bg-white dark:bg-gray-900 transition-all duration-300 ease-in-out ${
           sidebarVisible ? "md:ml-[240px]" : "ml-0"
         }`}
       >
@@ -84,17 +84,14 @@ export function Landing() {
           <img
             src="/images/chatgpt.png"
             onClick={() => navigate("/Chatbot")}
-            className="w-16 h-16 cursor-pointer"
+            className="w-12 h-12 md:w-16 md:h-16 cursor-pointer"
             alt="Chatbot"
           />
         </div>
         <div className="max-w-6xl mx-auto space-y-12">
           {/* Header */}
-          <div className="flex justify-between items-center">
-            <h1
-              className="text-3xl font-bold text-pink-600 dark:text-pink-400 
-            "
-            >
+          <div className="flex justify-between items-center mt-8 pt-8 md:mt-16 md:pt-6">
+            <h1 className="text-3xl md:text-3xl font-bold text-pink-600 dark:text-pink-400">
               Welcome to SheSync
             </h1>
             {/* <button
@@ -578,7 +575,7 @@ export function Landing() {
                 answer="Yes, all our educational content is created or reviewed by qualified healthcare professionals to ensure accuracy and relevance."
               />
             </div>
-          </Card> */}
+          </Card>
           <FAQSection />
           {/*App Features Showcase */}
           {/* <Card className=" hover:bg-pink-200 active:bg-pink-100 focus:outline-none focus:ring focus:ring-pink-300  dark:hover:bg-pink-500">
